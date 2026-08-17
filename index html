@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>File Integrity Checker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>🔐 File Integrity Checker</h1>
+
+        <p class="subtitle">
+            Check the SHA-256 hash of a file to help verify its integrity.
+        </p>
+
+        <div class="card">
+
+            <label for="fileInput" class="file-label">
+                Select a File
+            </label>
+
+            <input type="file" id="fileInput">
+
+            <div id="fileInfo" class="file-info">
+                No file selected
+            </div>
+
+            <button id="checkBtn">
+                Calculate SHA-256
+            </button>
+
+            <div id="result" class="result">
+                SHA-256 hash will appear here.
+            </div>
+
+        </div>
+
+        <div class="info">
+            <h2>How it works</h2>
+
+            <p>
+                This tool generates a SHA-256 cryptographic hash
+                from your selected file. Even a small change in the
+                file can produce a different hash.
+            </p>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
